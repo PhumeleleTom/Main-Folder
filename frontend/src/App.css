@@ -1,0 +1,172 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar {
+  flex:content;
+  flex: 1 0;
+  border: 2pt solid blue;
+  height: 100dvh;
+  background-color: white;
+}
+
+.navbar .link {
+  margin: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex:content;
+  flex: 3 0;
+  border: 2pt solid red;
+  height: 100dvh;
+  background-color: lightgrey;
+}
+
+.newTaskButton {
+  background-color: black;
+  border: 1pt solid black;
+  border-radius: 50px;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  width: 250px;
+  height: 50px;
+  font-size: xx-large;
+}
+
+.newTaskButton:hover {
+  background-color: rgb(87, 85, 85);
+}
+
+.newTaskButton:active {
+  background-color: black;
+}
+
+.taskContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+  width: 50dvw;
+  margin: 10px;
+  padding: 10px;
+}
+
+.taskContainer * {
+  font-size: xx-large;
+  margin: 10px;
+  padding: 10px;
+  flex: content;
+}
+
+.taskContainer .toggleButton{
+  background-color: lightgrey;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  flex: 0;
+}
+
+.taskContainer button:hover{
+  background-color: grey;
+}
+
+.taskContainer button:active{
+  background-color: lightgrey;
+}
+
+.taskContainer .toggleButton:after{
+  content: '\22EE';
+}
+
+.taskContainer .listButton{
+  background-color: lightgrey;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  flex: 0;
+  width: 10px;
+  height: 10px;
+  font-size: small;
+}
+
+.taskTime {
+  background-color: lightgrey;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+}
+
+.taskTime img{
+  margin: auto;
+  padding: 0;
+  padding-right: 20px;
+}
+
+.newTaskForm {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 40dvw;
+  height: 65dvh;
+}
+
+.newTaskForm *{
+  background-color: lightgrey;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.newTaskForm .cancelButton {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.newTaskForm .cancelButton:hover {
+  background-color: lightgrey;
+}
+
+.newTaskForm .cancelButton:active {
+  background-color: white;
+}
+
+.newTaskForm .addTaskButton {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+}
+
+.newTaskForm .addTaskButton:hover{
+  background-color: darkgrey;
+}
+
+.newTaskForm .addTaskButton:active{
+  background-color: black;
+}
+
+.listItem {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+.menuPopup {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menuPopup *{
+  margin: 1px;
+  padding: 1px;
+}
+
+.errorMessage {
+  color: red;
+}

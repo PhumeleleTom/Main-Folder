@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: scheduler
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/taskdatabase
+    username: postgres
+    password: 11987668[#]Tp
+  jpa:
+    database-platform: org.hibernate.dialect.PosgreSQLInnoDBDialect
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    mvc:
+      throw-exception-if-no-handler-found: true
+      async:
+        request-timeout: 3600000
+server:
+  port: 8080
+  error:
+    path: /user/error
+    whitelabel:
+      enabled: false
