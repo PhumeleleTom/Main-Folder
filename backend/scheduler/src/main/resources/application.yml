@@ -4,7 +4,7 @@ spring:
   datasource:
     url: jdbc:postgresql://127.0.0.1:5432/taskdatabase
     username: postgres
-    password: 11987668[#]Tp
+    password: password
   jpa:
     database-platform: org.hibernate.dialect.PosgreSQLInnoDBDialect
     generate-ddl: true
